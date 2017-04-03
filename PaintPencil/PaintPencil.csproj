@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E24AE31-A98B-4F09-93A7-9BB75D1A8661}</ProjectGuid>
+    <ProjectGuid>{7B5E8E1B-DAC9-4E92-812F-CAFACDA6657A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GraphicsOOP3</RootNamespace>
-    <AssemblyName>GraphicsOOP3</AssemblyName>
+    <RootNamespace>PaintPencil</RootNamespace>
+    <AssemblyName>PaintPencil</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -51,7 +51,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyShape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
