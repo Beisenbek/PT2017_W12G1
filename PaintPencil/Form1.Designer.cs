@@ -32,6 +32,8 @@
             this.colorBtn = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.mouseLocationLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lineBtn = new System.Windows.Forms.Button();
+            this.freeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +46,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(502, 398);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
@@ -63,23 +66,45 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mouseLocationLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 585);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 586);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(806, 38);
+            this.statusStrip1.Size = new System.Drawing.Size(806, 37);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // mouseLocationLabel
             // 
             this.mouseLocationLabel.Name = "mouseLocationLabel";
-            this.mouseLocationLabel.Size = new System.Drawing.Size(177, 33);
+            this.mouseLocationLabel.Size = new System.Drawing.Size(177, 32);
             this.mouseLocationLabel.Text = "mouseLocation";
+            // 
+            // lineBtn
+            // 
+            this.lineBtn.Location = new System.Drawing.Point(29, 240);
+            this.lineBtn.Name = "lineBtn";
+            this.lineBtn.Size = new System.Drawing.Size(81, 54);
+            this.lineBtn.TabIndex = 3;
+            this.lineBtn.Text = "line";
+            this.lineBtn.UseVisualStyleBackColor = true;
+            this.lineBtn.Click += new System.EventHandler(this.lineBtn_Click);
+            // 
+            // freeBtn
+            // 
+            this.freeBtn.Location = new System.Drawing.Point(29, 332);
+            this.freeBtn.Name = "freeBtn";
+            this.freeBtn.Size = new System.Drawing.Size(81, 54);
+            this.freeBtn.TabIndex = 4;
+            this.freeBtn.Text = "free";
+            this.freeBtn.UseVisualStyleBackColor = true;
+            this.freeBtn.Click += new System.EventHandler(this.freeBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(806, 623);
+            this.Controls.Add(this.freeBtn);
+            this.Controls.Add(this.lineBtn);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.colorBtn);
             this.Controls.Add(this.pictureBox1);
@@ -99,6 +124,8 @@
         private System.Windows.Forms.Button colorBtn;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel mouseLocationLabel;
+        private System.Windows.Forms.Button lineBtn;
+        private System.Windows.Forms.Button freeBtn;
     }
 }
 
